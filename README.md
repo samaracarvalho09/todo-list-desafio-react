@@ -1,54 +1,78 @@
-# React + TypeScript + Vite
+# Lista de Tarefas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center" style="color: #5E60CE; font-size:16px; font-weight: bold">Desafio 01: Lista de Tarefas</p>
 
-Currently, two official plugins are available:
+<p align="center">
+  <a href="#tecnologias" style="color:  #8284FA">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#projeto" style="color:  #8284FA">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#funcionalidades" style="color:  #8284FA">Funcionalidades</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#como-executar" style="color:  #8284FA">Como Executar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#licenca" style="color:  #8284FA">Licença</a>
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<br>
 
-## Expanding the ESLint configuration
+<h3 align="center" style="color: #5E60CE">Visualização do Projeto</h3>
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+<p align="center">
+  <img style="border: 1px solid #cecece" alt="Gif da Lista de Tarefas" src=".github/todolist.gif" width="80%">
+</p>
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🚀 Tecnologias
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **React** - Biblioteca JavaScript para construção da interface de usuário.
+- **TypeScript** - Superset de JavaScript que adiciona tipagem estática.
+- **CSS Modules** - Sistema de escopo para estilos, evitando conflitos de CSS.
+- **uuid** - Biblioteca para geração de IDs únicos para cada tarefa.
+- **@phosphor-icons/react** - Biblioteca de ícones React, utilizada para o ícone de lixeira e marcação de tarefas.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 💻 Projeto
+
+O **ToDo List** é uma aplicação simples de gerenciamento de tarefas. Com ela, é possível adicionar, marcar como concluída e excluir tarefas. O projeto foi desenvolvido para praticar o uso do React com TypeScript, permitindo a manipulação e visualização das tarefas de maneira interativa.
+
+## ✨ Funcionalidades
+
+- **Adicionar novas tarefas**: O usuário pode adicionar novas tarefas ao clicar em um campo de entrada e pressionar Enter.
+- **Marcar tarefas como concluídas**: Ao clicar no ícone de checkbox, o status da tarefa alterna entre "concluída" e "pendente".
+- **Excluir tarefas**: O usuário pode excluir uma tarefa ao clicar no ícone de lixeira.
+- **Contadores dinâmicos**: O aplicativo exibe o número de tarefas criadas e o número de tarefas concluídas, atualizados em tempo real.
+
+## 🔖 Como Executar
+
+Siga os passos abaixo para rodar o projeto localmente:
+
+1. Clone o repositório:
+    ```bash
+    git clone https://github.com/samaracarvalho09/todo-list-desafio-react.git
+    ```
+
+2. Navegue até o diretório do projeto:
+    ```bash
+    cd todo-list-desafio-react
+    ```
+
+3. Instale as dependências:
+    ```bash
+    npm install
+    # ou
+    yarn install
+    # ou
+    pnpm install
+    ```
+
+4. Inicie a aplicação:
+    ```bash
+    npm start
+    # ou
+    yarn start
+    # ou
+    pnpm start
+    ```
+
+Acesse a aplicação em [http://localhost:3002](http://localhost:3002).
+
+## 📝 Licença
+
+Este projeto está sob a licença **MIT**. Veja o arquivo [LICENSE](LICENSE) para mais informações.

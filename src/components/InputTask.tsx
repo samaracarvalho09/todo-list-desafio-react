@@ -1,18 +1,31 @@
 import styles from './InputTask.module.css'
 import { PlusCircle } from "@phosphor-icons/react";
+import { useState } from 'react';
 
-export function InputTask() {
+interface InputTaskProps {
+  onAddTask: (content: string) => void;
+}
+
+export function InputTask({ onAddTask }: InputTaskProps) {
+  const [newTask, setNewTask] = useState('');
+
+  function handleAddTask() {
+    if (newTask.trim()) {
+      onAddTask(newTask);
+      setNewTask('');
+    }
+  }
 
   return (
     <div className={styles.inputTask}>
-      {/* <div className={styles.inputContainer}> */}
-        <input 
+      <input 
         type="text" 
-        placeholder='Adicione uma nova tarefa'
+        placeholder="Adicione uma nova tarefa"
         className={styles.inputContainer}
-        />
-      {/* </div> */}
-      <button className={styles.createButton}>
+        value={newTask}
+        onChange={(e) => setNewTask(e.target.value)}
+      />
+      <button className={styles.createButton} onClick={handleAddTask}>
         Criar
         <PlusCircle size={32} />
       </button>

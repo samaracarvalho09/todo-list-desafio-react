@@ -1,0 +1,112 @@
+.contentTasks {
+  width: 100%;
+  max-width: 736px;
+  margin-inline: auto;
+  padding-inline: 16px;
+  padding-bottom: 100px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 736px;
+  margin-inline: auto;
+  margin-block: 64px 24px;
+}
+.createdTask,
+.fineshedTask {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+
+  padding-right: 8px;
+}
+
+.createdTask + span,
+.fineshedTask + span {
+  color: var(--gray-200);
+  background-color: var(--gray-400);
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+
+.createdTask {
+  color: var(--blue);
+}
+
+.fineshedTask {
+  color: var(--purple);
+}
+
+.noCheckedIcon:hover svg,
+.checkedIcon:hover svg {
+  opacity: 0.2;
+}
+
+.noCheckedIcon:hover path {
+  fill: var(--blue-dark);
+}
+
+.checkedIcon:hover path:nth-child(-n + 2) {
+  fill: var(--purple);
+}
+
+.deleteButton,
+.checkedIcon:hover,
+.noCheckedIcon:hover {
+  cursor: pointer;
+}
+
+.deleteButton:hover path {
+  color: var(--danger);
+}
+
+.deleteButton:hover {
+  background-color: var(--gray-400);
+  border-radius: 4px;
+}
+
+.emptyTaskList {
+  border-top: 1px solid var(--gray-400);
+  border-radius: 8px;
+  padding: 64px 24px;
+  text-align: center;
+}
+
+.textEmptyTaskList {
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--gray-300);
+}
+
+.textEmptyTaskList p:first-child {
+  font-weight: 700;
+}
+
+.taskItem {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+
+  background-color: var(--gray-500);
+  border-radius: 8px;
+
+  p {
+    text-align: center;
+    padding-inline: 12px;
+    color: var(--gray-100);
+  }
+
+  p.checked {
+    text-decoration: line-through;
+    color: var(--gray-300);
+  }
+}
+
+.taskItem + .taskItem {
+  margin-top: 12px;
+}
+
+

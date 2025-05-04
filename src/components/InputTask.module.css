@@ -4,8 +4,6 @@
   justify-content: center;
   gap: 8px;
   margin-top: -26px;
-  padding: 16px;
-
 }
 
 .inputContainer {
@@ -19,11 +17,9 @@
   outline: none;
   padding: 16px;
 
-  color: var(--gray-100); 
+  color: var(--gray-100);
   font-size: 16px;
-  
 }
-
 
 .inputContainer input::placeholder {
   color: var(--gray-300);
@@ -31,7 +27,6 @@
 
 .inputContainer:focus {
   border: 1px solid var(--purple-dark);
-
 }
 
 .createButton {
@@ -53,6 +48,6 @@
 }
 
 .createButton:hover {
-  background-color: var(--blue);  
+  background-color: var(--blue);
   cursor: pointer;
 }
