@@ -18,7 +18,7 @@
   <img style="border: 1px solid #cecece" alt="Gif da Lista de Tarefas" src="/src/assets/todolist.gif" width="80%">
 </p>
 
-## 🚀 Tecnologias
+<h2 id="#tecnologias"> 🚀 Tecnologias </h2>
 
 Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 
@@ -28,18 +28,18 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 - **uuid** - Biblioteca para geração de IDs únicos para cada tarefa.
 - **@phosphor-icons/react** - Biblioteca de ícones React, utilizada para o ícone de lixeira e marcação de tarefas.
 
-## 💻 Projeto
+<h2 id="#projeto">💻 Projeto</h2>
 
 O **ToDo List** é uma aplicação simples de gerenciamento de tarefas. Com ela, é possível adicionar, marcar como concluída e excluir tarefas. O projeto foi desenvolvido para praticar o uso do React com TypeScript, permitindo a manipulação e visualização das tarefas de maneira interativa.
 
-## ✨ Funcionalidades
+<h2 id="#funcionalidades"> ✨ Funcionalidades</h2>
 
 - **Adicionar novas tarefas**: O usuário pode adicionar novas tarefas ao clicar em um campo de entrada e pressionar Enter.
 - **Marcar tarefas como concluídas**: Ao clicar no ícone de checkbox, o status da tarefa alterna entre "concluída" e "pendente".
 - **Excluir tarefas**: O usuário pode excluir uma tarefa ao clicar no ícone de lixeira.
 - **Contadores dinâmicos**: O aplicativo exibe o número de tarefas criadas e o número de tarefas concluídas, atualizados em tempo real.
 
-## 🔖 Como Executar
+<h2 id="#como-executar">🔖 Como Executar</h2>
 
 Siga os passos abaixo para rodar o projeto localmente:
 
@@ -73,6 +73,6 @@ Siga os passos abaixo para rodar o projeto localmente:
 
 Acesse a aplicação em [http://localhost:3002](http://localhost:3002).
 
-## 📝 Licença
+<h2 id="#licenca">📝 Licença</h2>
 
 Este projeto está sob a licença **MIT**. Veja o arquivo [LICENSE](LICENSE) para mais informações.
