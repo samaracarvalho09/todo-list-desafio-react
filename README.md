@@ -15,7 +15,7 @@
 <h3 align="center" style="color: #5E60CE">Visualização do Projeto</h3>
 
 <p align="center">
-  <img style="border: 1px solid #cecece" alt="Gif da Lista de Tarefas" src=".github/todolist.gif" width="80%">
+  <img style="border: 1px solid #cecece" alt="Gif da Lista de Tarefas" src="/src/assets/todolist.gif" width="80%">
 </p>
 
 ## 🚀 Tecnologias
